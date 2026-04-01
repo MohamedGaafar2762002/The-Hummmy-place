@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Hummmy Place</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Miniver&family=Molle:ital@1&family=Norican&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ===== COVER ===== -->
+    <section class="cover">
+      <img src="../pic/public/photo-1600891964599-f61ba0e24092.jfif" />
+    </section>
+
+    <!-- ===== RESTAURANT INFO ===== -->
+    <section class="restaurant-info">
+      <img src="../pic/5a9f2233-ead7-4b54-a64b-ac32fa2b9bb5.png" class="logo" />
+      <h1>The Hummmy Place</h1>
+      <p>Luxury Food Experience</p>
+    </section>
+
+    <!-- ===== MAIN CATEGORIES ===== -->
+    <section class="main-categories">
+      <button class="active" onclick="setMain('all', event)">All</button>
+      <button onclick="setMain('food', event)">Food</button>
+      <button onclick="setMain('drinks', event)">Drinks</button>
+      <button onclick="setMain('desserts', event)">Desserts</button>
+    </section>
+
+    <!-- ===== SUB CATEGORIES ===== -->
+    <section class="sub-categories" id="subCategories"></section>
+
+    <!-- ===== MENU ===== -->
+    <section class="menu" id="menu">
+      <!-- Pizza -->
+      <!-- ===== PIZZA ===== -->
+
+      <div class="card" data-category="food" data-sub="pizza">
+        <img
+          src="../pic/food/pizza/photo-1594007654729-407eedc4be65.jfif"
+        />
+        <div class="card-content">
+          <h3>Margherita Pizza</h3>
+          <p>
+            Classic pizza with fresh tomato sauce, mozzarella cheese & basil
+          </p>
+          <span class="price">120 EGP</span>
+        </div>
+      </div>
+
+      <div class="card" data-category="food" data-sub="pizza">
+        <img src="../pic/food/pizza/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-1024x682-583b275444104ef189d693a64df625da.jpg" />
+        <div class="card-content">
+          <h3>Pepperoni Pizza</h3>
+          <p>Loaded with mozzarella cheese & spicy pepperoni slices</p>
+          <span class="price">150 EGP</span>
+        </div>
+      </div>
+
+      <div class="card" data-category="food" data-sub="pizza">
+        <img
+          src="../pic/food/pizza/16e6fa3b-16c8-4718-a924-32973d9b06ac.avif"
+        />
+        <div class="card-content">
+          <h3>BBQ Chicken Pizza</h3>
+          <p>Grilled chicken, BBQ sauce, onions & melted cheese</p>
+          <span class="price">160 EGP</span>
+        </div>
+      </div>
+
+      <div class="card" data-category="food" data-sub="pizza">
+        <img
+          src="../pic/food/pizza/mar.jfif"
+        />
+        <div class="card-content">
+          <h3>Vegetarian Pizza</h3>
+          <p>Fresh veggies, olives, mushrooms & mozzarella cheese</p>
+          <span class="price">130 EGP</span>
+        </div>
+      </div>
+
+      <div class="card" data-category="food" data-sub="pizza">
+        <img
+          src="../pic/food/pizza/meat-lovers-pizza-recipe-3.jpg"
+        />
+        <div class="card-content">
+          <h3>Meat Lovers Pizza</h3>
+          <p>Beef, sausage, pepperoni & extra cheese</p>
+          <span class="price">180 EGP</span>
+        </div>
+      </div>
+
+      <div class="card" data-category="food" data-sub="pizza">
+        <img
+          src="../pic/food/pizza/n.jfif"
+        />
+        <div class="card-content">
+          <h3>Cheese Lovers Pizza</h3>
+          <p>Mix of mozzarella, cheddar & parmesan cheeses</p>
+          <span class="price">140 EGP</span>
+        </div>
+      </div>
+      </div>
+
+      <!-- Burger -->
+      <!-- ===== BURGERS ===== -->
+
+<div class="card" data-category="food" data-sub="burger">
+  <img src="../pic/food/burger/Beef-Burger1080x720px.jpg"/>
+  <div class="card-content">
+    <h3>Classic Beef Burger</h3>
+    <p>Grilled beef patty with lettuce, tomato & special sauce</p>
+    <span class="price">130 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="burger">
+  <img src="../pic/food/burger/cheddarbaconcheeseburger__FocusFillWyIwLjAwIiwiMC4wMCIsODAwLDQ3OF0_CompressedW10.jpg"/>
+  <div class="card-content">
+    <h3>Cheese Burger</h3>
+    <p>Juicy beef with melted cheddar cheese & fresh toppings</p>
+    <span class="price">140 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="burger">
+  <img src="../pic/food/burger/q.jfif"/>
+  <div class="card-content">
+    <h3>Double Burger</h3>
+    <p>Double beef patties with double cheese & signature sauce</p>
+    <span class="price">170 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="burger">
+  <img src="../pic/food/burger/Buffalo-Chicken-Burger-square-FS-2.jpg"/>
+  <div class="card-content">
+    <h3>Chicken Burger</h3>
+    <p>Crispy chicken fillet with lettuce & mayo sauce</p>
+    <span class="price">120 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="burger">
+  <img src="../pic/food/burger/bbq.jpg"/>
+  <div class="card-content">
+    <h3>BBQ Burger</h3>
+    <p>Beef burger with BBQ sauce, onions & melted cheese</p>
+    <span class="price">150 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="burger">
+  <img src="../pic/food/burger/Mushroom-Swiss-Burger-with-Jalapeno-Aioli_FY22_3.jfif"/>
+  <div class="card-content">
+    <h3>Mushroom Burger</h3>
+    <p>Beef patty with sautéed mushrooms & creamy sauce</p>
+    <span class="price">145 EGP</span>
+  </div>
+</div>
+
+<!-- ===== SANDWICHES ===== -->
+
+<div class="card" data-category="food" data-sub="sandwiches">
+  <img src="../pic/food/sandwitch/Rotisserie-Chicken-Sandwich-202-2000-485b673fe411460e95b512fbf805a5d9.jpg"/>
+  <div class="card-content">
+    <h3>Chicken Sandwich</h3>
+    <p>Grilled chicken with lettuce, tomato & garlic sauce</p>
+    <span class="price">110 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="sandwiches">
+  <img src="../pic/food/sandwitch/SpicedRoastBeefBoxingDaySandwichesEDIT-df83952.jpg"/>
+  <div class="card-content">
+    <h3>Beef Sandwich</h3>
+    <p>Tender beef slices with cheese & special sauce</p>
+    <span class="price">120 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="sandwiches">
+  <img src="../pic/food/sandwitch/shawrma.webp"/>
+  <div class="card-content">
+    <h3>Shawarma Sandwich</h3>
+    <p>Chicken shawarma with garlic sauce & pickles</p>
+    <span class="price">100 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="sandwiches">
+  <img src="../pic/food/sandwitch/RFO-1400x919-ChickenClubSandwich-0ee77c05-5a77-49ac-a3bd-4d45e3b4dca7-0-1400x919.jpg"/>
+  <div class="card-content">
+    <h3>Club Sandwich</h3>
+    <p>Triple layers with chicken, turkey, cheese & veggies</p>
+    <span class="price">130 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="sandwiches">
+  <img src="../pic/food/sandwitch/cheese.jfif"/>
+  <div class="card-content">
+    <h3>Cheese Sandwich</h3>
+    <p>Melted cheese with toasted bread & herbs</p>
+    <span class="price">90 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="sandwiches">
+  <img src="../pic/food/sandwitch/tuna.jpg"/>
+  <div class="card-content">
+    <h3>Tuna Sandwich</h3>
+    <p>Fresh tuna mix with lettuce & light mayo</p>
+    <span class="price">105 EGP</span>
+  </div>
+</div>
+
+<!-- ===== GRILLS ===== -->
+
+<div class="card" data-category="food" data-sub="grills">
+  <img src="../pic/food/grilled/grilled chicken.jpg"/>
+  <div class="card-content">
+    <h3>Grilled Chicken</h3>
+    <p>Juicy grilled chicken served with herbs & spices</p>
+    <span class="price">160 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="grills">
+  <img src="../pic/food/burger/b.jfif"/>
+  <div class="card-content">
+    <h3>Chicken BBQ</h3>
+    <p>Grilled chicken glazed with smoky BBQ sauce</p>
+    <span class="price">170 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="grills">
+  <img src="../pic/food/grilled/mixed grill.webp"/>
+  <div class="card-content">
+    <h3>Mixed Grill</h3>
+    <p>Selection of grilled meats: chicken, beef & kofta</p>
+    <span class="price">220 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="grills">
+  <img src="../pic/food/grilled/grilled-beef-koftas-with-herbed-lemon-yogurt--pickled-onions-detail-40dcbd69.jpg"/>
+  <div class="card-content">
+    <h3>Grilled Kofta</h3>
+    <p>Spiced minced meat grilled to perfection</p>
+    <span class="price">150 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="grills">
+  <img src="../pic/food/grilled/Perfect-Grilled-Steak-with-Herb-Butter-iowagirleats-Featured-1200x2-1.jpg"/>
+  <div class="card-content">
+    <h3>Grilled Steak</h3>
+    <p>Premium beef steak grilled & served with sauce</p>
+    <span class="price">250 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="grills">
+  <img src="../pic/food/grilled/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__07__20190618-grilled-turkish-chicken-wings-vicky-wasik-13-6f722c8e117f4d6ab1b99ec8340de765.jpg"/>
+  <div class="card-content">
+    <h3>Chicken Wings</h3>
+    <p>Grilled wings with spicy BBQ glaze</p>
+    <span class="price">140 EGP</span>
+  </div>
+</div>
+
+
+<!-- ===== PASTA ===== -->
+
+<div class="card" data-category="food" data-sub="pasta">
+  <img src="../pic/food/spaghetti/Authentic-Spaghetti-Bolognese-SQ.jpg"/>
+  <div class="card-content">
+    <h3>Spaghetti Bolognese</h3>
+    <p>Classic pasta with rich meat sauce & parmesan cheese</p>
+    <span class="price">140 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="pasta">
+  <img src="../pic/food/spaghetti/Skinny-Chicken-Broccoli-Alfredo-1.jpg"/>
+  <div class="card-content">
+    <h3>Chicken Alfredo</h3>
+    <p>Creamy white sauce pasta with grilled chicken</p>
+    <span class="price">160 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="pasta">
+  <img src="../pic/food/spaghetti/Penne-all-arrabbiata_650x433_wm.jpg"/>
+  <div class="card-content">
+    <h3>Penne Arrabbiata</h3>
+    <p>Spicy tomato sauce with garlic & herbs</p>
+    <span class="price">130 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="pasta">
+  <img src="../pic/food/spaghetti/easy-beef-lasagna-with-bechamel-sauce.webp"/>
+  <div class="card-content">
+    <h3>Lasagna</h3>
+    <p>Layered pasta with meat sauce & melted cheese</p>
+    <span class="price">170 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="pasta">
+  <img src="../pic/food/spaghetti/seafood.webp"/>
+  <div class="card-content">
+    <h3>Seafood Pasta</h3>
+    <p>Mixed seafood with creamy sauce & herbs</p>
+    <span class="price">190 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="food" data-sub="pasta">
+  <img src="../pic/food/spaghetti/Creamy-Mushroom-Pasta-Recipe-21.jpg"/>
+  <div class="card-content">
+    <h3>Mushroom Pasta</h3>
+    <p>Creamy pasta with mushrooms & parmesan cheese</p>
+    <span class="price">150 EGP</span>
+  </div>
+</div>
+
+
+      <!-- Drinks -->
+       <!-- ===== HOT DRINKS ===== -->
+
+<div class="card" data-category="drinks" data-sub="Hot drinks">
+  <img src="../pic/drinks/hot/methode-preparation-espresso.webp"/>
+  <div class="card-content">
+    <h3>Espresso</h3>
+    <p>Strong black coffee shot with rich flavor</p>
+    <span class="price">40 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="Hot drinks">
+  <img src="../pic/drinks/hot/difference_between_espresso_and_cappuccino.webp"/>
+  <div class="card-content">
+    <h3>Cappuccino</h3>
+    <p>Espresso with steamed milk & creamy foam</p>
+    <span class="price">60 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="Hot drinks">
+  <img src="../pic/drinks/hot/cafe-latte1-recipe_resized.jpg"/>
+  <div class="card-content">
+    <h3>Latte</h3>
+    <p>Smooth coffee with milk & light foam</p>
+    <span class="price">65 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="Hot drinks">
+  <img src="../pic/drinks/hot/hot chocolate.jpg"/>
+  <div class="card-content">
+    <h3>Hot Chocolate</h3>
+    <p>Rich chocolate drink with creamy texture</p>
+    <span class="price">70 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="Hot drinks">
+  <img src="../pic/drinks/hot/turkish-coffee-a-distinction-of-the-people-of-turkey-209132_15e8ba02-8035-4262-93f4-83aae3ed6526.webp"/>
+  <div class="card-content">
+    <h3>Turkish Coffee</h3>
+    <p>Traditional strong coffee with bold taste</p>
+    <span class="price">45 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="Hot drinks">
+  <img src="../pic/drinks/hot/steeping-tea.webp"/>
+  <div class="card-content">
+    <h3>Tea</h3>
+    <p>Classic black tea served hot</p>
+    <span class="price">25 EGP</span>
+  </div>
+</div>
+      <!-- ===== COLD DRINKS ===== -->
+
+<div class="card" data-category="drinks" data-sub="cold">
+  <img src="../pic/drinks/cold/Coa-Cola-Photoroom.webp"/>
+  <div class="card-content">
+    <h3>Cola</h3>
+    <p>Ice cold refreshing soft drink</p>
+    <span class="price">30 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="cold">
+  <img src="../pic/drinks/cold/fresh-orange-juice-recipe-1747810165.jpg"/>
+  <div class="card-content">
+    <h3>Orange Juice</h3>
+    <p>Freshly squeezed orange juice</p>
+    <span class="price">50 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="cold">
+  <img src="../pic/drinks/cold/carrot-mango-juice-in-two-glasses-copy.jpg"/>
+  <div class="card-content">
+    <h3>Mango Juice</h3>
+    <p>Sweet tropical mango drink</p>
+    <span class="price">55 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="cold">
+  <img src="../pic/drinks/cold/mint-lemonade-picture.jpg"/>
+  <div class="card-content">
+    <h3>Lemon Mint</h3>
+    <p>Refreshing lemon with mint & ice</p>
+    <span class="price">45 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="cold">
+  <img src="../pic/drinks/cold/Coffee-Kiss-Iced-Coffee_1_.webp"/>
+  <div class="card-content">
+    <h3>Iced Coffee</h3>
+    <p>Chilled coffee with milk & ice</p>
+    <span class="price">60 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="cold">
+  <img src="../pic/drinks/cold/strawberry-banana-smoothie.jpg"/>
+  <div class="card-content">
+    <h3>Strawberry Smoothie</h3>
+    <p>Fresh strawberries blended with milk & ice</p>
+    <span class="price">65 EGP</span>
+  </div>
+</div>
+
+      <!-- ===== MILKSHAKES ===== -->
+
+<div class="card" data-category="drinks" data-sub="milkshake">
+  <img src="../pic/drinks/milkshake/StrawberryMilkshake_RECIPE_053123_3599.webp"/>
+  <div class="card-content">
+    <h3>Strawberry Milkshake</h3>
+    <p>Fresh strawberries blended with milk & creamy ice cream</p>
+    <span class="price">70 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="milkshake">
+  <img src="../pic/drinks/milkshake/ultimate-chocolate-freakshake.jpg"/>
+  <div class="card-content">
+    <h3>Chocolate Milkshake</h3>
+    <p>Rich chocolate shake topped with whipped cream</p>
+    <span class="price">75 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="milkshake">
+  <img src="../pic/drinks/milkshake/vanilla.jpeg"/>
+  <div class="card-content">
+    <h3>Vanilla Milkshake</h3>
+    <p>Classic vanilla shake with smooth creamy texture</p>
+    <span class="price">65 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="milkshake">
+  <img src="../pic/drinks/milkshake/228324oreo-milkshakeFranceC2x1-15889398d755481dbcc286fe389608ef.jpg"/>
+  <div class="card-content">
+    <h3>Oreo Milkshake</h3>
+    <p>Blended Oreo cookies with milk & ice cream</p>
+    <span class="price">80 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="milkshake">
+  <img src="../pic/drinks/milkshake/mango-part-2-image.webp"/>
+  <div class="card-content">
+    <h3>Mango Milkshake</h3>
+    <p>Sweet mango blended with milk & creamy ice cream</p>
+    <span class="price">75 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="drinks" data-sub="milkshake">
+  <img src="../pic/drinks/milkshake/chocolate-caramel-milkshake-recipe.jpg"/>
+  <div class="card-content">
+    <h3>Caramel Milkshake</h3>
+    <p>Milkshake with caramel sauce & whipped cream topping</p>
+    <span class="price">80 EGP</span>
+  </div>
+</div>
+
+
+<!-- ===== CAKES ===== -->
+
+<div class="card" data-category="desserts" data-sub="cakes">
+  <img src="../pic/desserts/cakes/chocolates.webp"/>
+  <div class="card-content">
+    <h3>Chocolate Cake</h3>
+    <p>Rich chocolate cake with creamy layers & chocolate sauce</p>
+    <span class="price">80 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="cakes">
+  <img src="../pic/desserts/cakes/red-velvet-cake-1C.webp"/>
+  <div class="card-content">
+    <h3>Red Velvet Cake</h3>
+    <p>Soft red velvet cake with cream cheese frosting</p>
+    <span class="price">90 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="cakes">
+  <img src="../pic/desserts/cakes/c.jfif"/>
+  <div class="card-content">
+    <h3>Cheesecake</h3>
+    <p>Classic creamy cheesecake with biscuit base</p>
+    <span class="price">85 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="cakes">
+  <img src="../pic/desserts/cakes/Strawberry-Cake-Recipe-Card.jpg"/>
+  <div class="card-content">
+    <h3>Strawberry Cake</h3>
+    <p>Light cake with fresh strawberries & cream</p>
+    <span class="price">85 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="cakes">
+  <img src="../pic/desserts/cakes/Chocolate-Caramel-Cake-10.jpg"/>
+  <div class="card-content">
+    <h3>Caramel Cake</h3>
+    <p>Soft cake topped with rich caramel sauce</p>
+    <span class="price">85 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="cakes">
+  <img src="../pic/desserts/cakes/lotus.jpg"/>
+  <div class="card-content">
+    <h3>Lotus Cake</h3>
+    <p>Lotus biscuit cake with creamy lotus sauce</p>
+    <span class="price">95 EGP</span>
+  </div>
+</div>
+
+<!-- ===== ICE CREAM ===== -->
+
+<div class="card" data-category="desserts" data-sub="icecream">
+  <img src="../pic/desserts/ice cream/AR-8314-Vanilla-Ice-Cream-gw-ddmfs-beauty-4x3-b0f065ec1e7346abb82f4b3d2ad9907b.jpg"/>
+  <div class="card-content">
+    <h3>Vanilla Ice Cream</h3>
+    <p>Classic vanilla scoops with smooth creamy texture</p>
+    <span class="price">50 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="icecream">
+  <img src="../pic/desserts/ice cream/chocolate-icecream-in-an-icecream-maker-500x500.jpg"/>
+  <div class="card-content">
+    <h3>Chocolate Ice Cream</h3>
+    <p>Rich chocolate ice cream with deep flavor</p>
+    <span class="price">55 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="icecream">
+  <img src="../pic/desserts/ice cream/strawberry-ice-cream-recipe.webp"/>
+  <div class="card-content">
+    <h3>Strawberry Ice Cream</h3>
+    <p>Fresh strawberry flavor with creamy texture</p>
+    <span class="price">55 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="icecream">
+  <img src="../pic/desserts/ice cream/sandae.jpg"/>
+  <div class="card-content">
+    <h3>Ice Cream Sundae</h3>
+    <p>Vanilla & chocolate with sauce & whipped cream</p>
+    <span class="price">70 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="icecream">
+  <img src="../pic/desserts/ice cream/caramell.jpg"/>
+  <div class="card-content">
+    <h3>Caramel Ice Cream</h3>
+    <p>Ice cream topped with rich caramel sauce</p>
+    <span class="price">65 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="icecream">
+  <img src="../pic/desserts/ice cream/lotus.jpg"/>
+  <div class="card-content">
+    <h3>Lotus Ice Cream</h3>
+    <p>Creamy ice cream with lotus biscuit & sauce</p>
+    <span class="price">75 EGP</span>
+  </div>
+</div>
+
+<!-- ===== WAFFLES ===== -->
+
+<div class="card" data-category="desserts" data-sub="waffles">
+  <img src="../pic/desserts/waffle/Chocolate-Waffles-6.jpg"/>
+  <div class="card-content">
+    <h3>Chocolate Waffle</h3>
+    <p>Warm waffle topped with rich chocolate sauce</p>
+    <span class="price">80 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="waffles">
+  <img src="../pic/desserts/waffle/straberry.webp"/>
+  <div class="card-content">
+    <h3>Strawberry Waffle</h3>
+    <p>Fresh strawberries with cream on a warm waffle</p>
+    <span class="price">85 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="waffles">
+  <img src="../pic/desserts/waffle/Nutella-Croffles-square.jpeg"/>
+  <div class="card-content">
+    <h3>Nutella Waffle</h3>
+    <p>Waffle topped with Nutella & powdered sugar</p>
+    <span class="price">90 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="waffles">
+  <img src="../pic/desserts/waffle/Banana-waffles_in-post_1.jpg"/>
+  <div class="card-content">
+    <h3>Banana Waffle</h3>
+    <p>Banana slices with chocolate drizzle & cream</p>
+    <span class="price">85 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="waffles">
+  <img src="../pic/desserts/waffle/lotus.jpg"/>
+  <div class="card-content">
+    <h3>Lotus Waffle</h3>
+    <p>Waffle with lotus sauce & biscuit topping</p>
+    <span class="price">95 EGP</span>
+  </div>
+</div>
+
+<div class="card" data-category="desserts" data-sub="waffles">
+  <img src="../pic/desserts/waffle/waffle.jpg"/>
+  <div class="card-content">
+    <h3>Waffle with Ice Cream</h3>
+    <p>Warm waffle served with vanilla ice cream & sauce</p>
+    <span class="price">100 EGP</span>
+  </div>
+</div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p>📍 Damietta, Egypt</p>
+      <p>📞 +20 100 000 0000</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
